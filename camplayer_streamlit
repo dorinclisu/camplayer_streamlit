@@ -1,0 +1,9 @@
+#!/bin/sh
+LOCATION="/opt/camplayer_streamlit"
+
+set -e
+
+cd $LOCATION
+source venv/bin/activate
+
+exec streamlit run Home.py

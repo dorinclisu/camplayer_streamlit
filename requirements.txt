@@ -1,0 +1,3 @@
+pydantic < 2
+streamlit < 2
+#streamlit-option-menu
