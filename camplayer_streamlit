@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 LOCATION="/opt/camplayer_streamlit"
 
 set -e
