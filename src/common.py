@@ -68,7 +68,7 @@ def setup_channel(channel: Channel, id: str):
         setup_stream(channel.detail, f'detail{id}')
 
 
-def make_grid(rows: int, cols: int) -> list[list[DeltaGenerator]]:
+def make_grid(rows: int, cols: int) -> List[List[DeltaGenerator]]:
     grid = []
     for _ in range(rows):
         with st.container():

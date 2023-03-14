@@ -1,10 +1,9 @@
 from enum import Enum
-from typing import Literal
-from typing import get_args
+from typing import List
 from urllib.parse import urlparse
 
 from pydantic import BaseModel
-
+from typing_extensions import get_args, Literal
 
 
 class DeviceBrand(str, Enum):
@@ -67,10 +66,10 @@ WindowCount = Literal[1,4,6,7,8,9,10,13,16]
 
 
 class Config(BaseModel):
-    channels:  list[Channel] = []
+    channels:  List[Channel] = []
     count:       WindowCount = get_args(WindowCount)[0]
-    layout:        list[str] = []
+    layout:        List[str] = []
     ini_path:            str = '~/.camplayer/config.ini'
 
-    def get_channel_names(self) -> list[str]:
+    def get_channel_names(self) -> List[str]:
         return list(map(lambda ch: ch.name, self.channels))
