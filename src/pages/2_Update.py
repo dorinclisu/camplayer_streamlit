@@ -1,3 +1,4 @@
+import sys
 import time
 
 import streamlit as st
@@ -10,6 +11,10 @@ config = load()
 
 with st.sidebar:
     ch_index = st.radio('Channels', range(len(config.channels)), format_func=lambda i: config.channels[i].name)
+
+if ch_index is None:
+    st.text('Add a channel first')
+    sys.exit()
 
 channel = config.channels[ch_index]
 
