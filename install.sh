@@ -22,7 +22,7 @@ pip install -r requirements-no-deps.txt --no-dependencies
 
 cp -r src/. $LOCATION/
 cp camplayer_streamlit /usr/local/bin/
-cp camplayer_streamlit.service /etc/systemd/
+cp camplayer_streamlit.service /etc/systemd/system/
 
 systemctl daemon-reload
 systemctl enable camplayer_streamlit
