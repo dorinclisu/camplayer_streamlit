@@ -22,3 +22,6 @@ typing-extensions>=3.10.0.0
 tzlocal>=1.1
 validators>=0.2
 watchdog
+gitpython!=3.1.19
+pydeck>=0.1.dev5
+tornado>=6.0.3
