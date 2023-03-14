@@ -1,2 +1,5 @@
+[global]
+dataFrameSerialization = "legacy"
+
 [browser]
 gatherUsageStats = false

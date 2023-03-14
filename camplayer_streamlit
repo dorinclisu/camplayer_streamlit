@@ -6,4 +6,4 @@ set -e
 cd $LOCATION
 source venv/bin/activate
 
-exec streamlit run Home.py
+exec python streamlit_no_pyarrow.py run Home.py

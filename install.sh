@@ -5,6 +5,7 @@ LOCATION="/opt/camplayer_streamlit"
 python -m venv $LOCATION/venv
 source $LOCATION/venv/bin/activate
 pip install -r requirements.txt
+pip install -r requirements-no-deps.txt --no-dependencies
 
 cp -r src/ $LOCATION/
 cp camplayer_streamlit /usr/local/bin/

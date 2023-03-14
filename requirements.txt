@@ -1,3 +1,24 @@
 pydantic < 2
-streamlit < 2
-#streamlit-option-menu
+
+# streamlit dependencies except pyarrow (which doesn't work on raspberry pi - arm32v7 / armhf)
+# copied from: https://github.com/streamlit/streamlit/blob/develop/lib/setup.py
+numpy==1.21.4  # newest arm32v7 precompiled (https://www.piwheels.org/project/numpy/) version available for python 3.7
+altair<5,>=3.2.0
+blinker>=1.0.0
+cachetools>=4.0
+click>=7.0
+importlib-metadata>=1.4
+packaging>=14.1
+pandas<2,>=0.25
+pillow>=6.2.0
+protobuf<4,>=3.12
+pympler>=0.9
+python-dateutil
+requests>=2.4
+rich>=10.11.0
+semver
+toml
+typing-extensions>=3.10.0.0
+tzlocal>=1.1
+validators>=0.2
+watchdog
