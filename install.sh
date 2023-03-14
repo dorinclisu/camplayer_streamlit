@@ -1,6 +1,8 @@
 #!/bin/sh
 LOCATION="/opt/camplayer_streamlit"
 
+set -e
+
 # install dependencies
 python -m venv $LOCATION/venv
 source $LOCATION/venv/bin/activate
